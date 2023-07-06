@@ -760,6 +760,10 @@ body {
     margin: 0 10px;
     grid-column: span 8;
   }
+
+  #blog .head-card img {
+    width: 350px;
+  }
  
   .school .school-btn {
     float: left;
@@ -806,8 +810,12 @@ body {
 
   #blog .card {
     grid-column: span 8;
-    width: 200px;
+    width: 250px;
     height: auto;
+  }
+
+  #blog .head-card img {
+    width: 250px;
   }
 
   .service-item {
