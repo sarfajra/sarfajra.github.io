@@ -229,7 +229,7 @@ body {
 
 .service-description {
   font-size: 14px;
-  color: green;
+  color: #777777;
   margin-bottom: 0;
 }
 
@@ -804,9 +804,9 @@ body {
     float: center;
   }
 
-  .card {
+  #blog .card {
     grid-column: span 8;
-    width: 200px;
+    width: 350px;
   }
 
   .service-item {
