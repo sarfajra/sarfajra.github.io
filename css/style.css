@@ -269,7 +269,7 @@ body {
 }
 
 #blog .card {
-  width: 400px;
+  width: 500px;
   height: auto;
   grid-column: span 4;
   margin: 20px 0;
@@ -279,7 +279,7 @@ body {
 }
 
 #blog .head-card img {
-  width: 400px;
+  width: 500px;
   height: auto;
   object-fit: cover;
   border-radius: 10px 10px 10px 10px;
@@ -755,8 +755,8 @@ body {
     margin-left: 0;
   }
 
-  .card {
-    width: 300px;
+  #blog .card {
+    width: 350px;
     margin: 0 10px;
     grid-column: span 8;
   }
@@ -806,7 +806,8 @@ body {
 
   #blog .card {
     grid-column: span 8;
-    width: 350px;
+    width: 200px;
+    height: auto;
   }
 
   .service-item {
