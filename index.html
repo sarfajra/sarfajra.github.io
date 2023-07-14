@@ -4,9 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.png" />
-
     <title>serzv page</title>
 
     <!-- fonts -->
@@ -16,6 +13,7 @@
 
     <!-- Font Awesome 5.15.1 CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <!-- Feather -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -242,18 +240,18 @@
           referrerpolicy="no-referrer-when-downgrade"
           class="map"
         ></iframe>
-        <form action="">
+        <form name="serzv-Contact-Form" action="">
           <div class="input-group">
             <i data-feather="user"></i>
-            <input type="text" placeholder="Nama" />
+            <input type="text" placeholder="Nama" name="nama" />
           </div>
           <div class="input-group">
             <i data-feather="mail"></i>
-            <input type="text" placeholder="E-Mail" />
+            <input type="email" placeholder="E-Mail" name="email" />
           </div>
           <div class="input-group">
             <i data-feather="message-circle"></i>
-            <input type="text" placeholder="Pesan" />
+            <input type="text" placeholder="Pesan" name="pesan" />
           </div>
           <button class="btn" type="submit">Kirim Pesan</button>
         </form>
@@ -296,5 +294,17 @@
 
     <!-- Java Script -->
     <script src="js/script.js"></script>
+
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbwG3EyFlgvikKF7QYaOmHu9XcIDj4pgK9jcekT6LN4-IlvZvlnKQ2uA8fC8KvRC3awP/exec";
+      const form = document.forms["serzv-Contact-Form"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>

@@ -416,7 +416,6 @@ body {
   border: 2px solid #fff;
   cursor: pointer;
 }
-
 /* index end */
 
 /* Footer section */
@@ -778,7 +777,6 @@ body {
 
   .service-item {
     flex-basis: 45%;
-    /* kode lainnya */
   }
 
   .contact .row {
@@ -798,7 +796,8 @@ body {
 
 /* Mobile Phone */
 
-@media (max-width: 550px) {
+@media (max-width: 450px) {
+
   html {
     font-size: 55%;
   }
