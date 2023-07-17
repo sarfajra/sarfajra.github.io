@@ -1,0 +1,174 @@
+/* media queries */
+
+/* Laptop */
+
+@media (max-width: 1366px) {
+    html {
+      font-size: 75%;
+    }
+  
+    .school {
+      background-attachment: scroll;
+    }
+  
+    .service-items {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+    }
+    
+    .service-item {
+      flex-basis: 30%;
+    }
+  
+    .breadcrumbs {
+      margin-top: 68px;
+    }
+  }
+  
+  /* Tablet */
+  
+  @media (max-width: 768px) {
+    html {
+      font-size: 63.5%;
+    }
+  
+    #hamburger-menu {
+      display: inline-block;
+    }
+  
+    .navbar .navbar-nav {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      background-color: var(--primary);
+      width: 20rem;
+      height: 100vh;
+      transition: 0.5s;
+    }
+  
+    .navbar .navbar-nav.active {
+      right: 0;
+    }
+  
+    .navbar .navbar-nav a {
+      color: white;
+      display: block;
+      margin: 1.5rem;
+      padding: 0.5rem;
+      font: 2rem;
+    }
+  
+    .navbar .navbar-nav a::after {
+      transform-origin: 0 0;
+    }
+  
+    .navbar .navbar-nav a:hover::after {
+      transform: scaleX(0.2);
+    }
+  
+    .hero img {
+      width: 500px;
+      float: center;
+    }
+  
+    .about .row {
+      flex-wrap: wrap;
+    }
+  
+    .about .row .about-me {
+      padding-bottom: 1.5rem; 
+    }
+  
+    .about .row .about-web {
+      padding:0 0;
+    }
+  
+    .about .row .about-web {
+      margin-left: 0;
+    }
+  
+    #blog .card {
+      width: 350px;
+      margin: 0 10px;
+      grid-column: span 8;
+    }
+  
+    #blog .head-card img {
+      width: 350px;
+    }
+   
+    .school .school-btn {
+      float: left;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      margin-left: 7rem;
+    }
+  
+    .service-items {
+      flex-wrap: wrap;
+    }
+  
+    .service-item {
+      flex-basis: 45%;
+    }
+  
+    .contact .row {
+      flex-wrap: wrap;
+    }
+  
+    .contact .row .map {
+      height: 35rem;
+    }
+  
+    .contact .row form {
+      padding-top: 0;
+    }
+  
+  
+  }
+  
+  /* Mobile Phone */
+  
+  @media (max-width: 450px) {
+  
+    html {
+      font-size: 55%;
+    }
+  
+    .hero img {
+      width: 320px;
+      float: center;
+    }
+
+    .hero h1 {
+        font-size: 2.9rem;
+        padding-left: 7rem;
+    }
+
+    .hero h2 {
+        padding-left: 7rem;
+    }
+
+    .hero .socials {
+        padding-left: 7rem;
+    }
+
+    #services {
+        padding: 0 0;
+      }
+  
+    #blog .card {
+      grid-column: span 8;
+      width: 250px;
+      height: auto;
+    }
+  
+    #blog .head-card img {
+      width: 250px;
+    }
+  
+    .service-item {
+      flex-basis: 20%;
+  
+  }
